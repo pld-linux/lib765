@@ -2,7 +2,7 @@ Summary:	765 FDC
 Summary(pl):	Biblioteka 765
 Name:		lib765
 Version:	0.3.1.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
@@ -34,10 +34,11 @@ jest niepe³na.
 "765" jest wypuszczone ma licencji LGPL.
 
 %package devel
-Summary:	765 library - development
-Summary(pl):	Czê¶æ dla programistów biblioteki 765
+Summary:	765 library - development files
+Summary(pl):	Pliki programistyczne biblioteki 765
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
+Requires:	libdsk-devel
 
 %description devel
 The lib765-devel package contains the header files and documentation
@@ -51,7 +52,7 @@ do kompilowania aplikacji korzystaj±cych z lib765.
 Summary:	765 static library
 Summary(pl):	Statyczna biblioteka lib765
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains the static lib765 library.
