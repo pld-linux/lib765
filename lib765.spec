@@ -6,6 +6,7 @@ Release:	1
 License:	LGPL
 Group:		Development/Libraries
 Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
+# Source0-md5:	073f39c39d0bab3e04ae3325ef3e2423
 URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
 BuildRequires:	autoconf
 BuildRequires:	automake
