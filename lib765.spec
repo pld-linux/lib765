@@ -20,7 +20,7 @@ Controller [FDC] as used in Amstrad computers such as the PCW, CPC and
 Spectrum +3. At present it is not a "full" 765; features not used in
 the PCW BIOS (such as: DMA; multisector reads/writes; multitrack mode)
 are either left unimplemented or incomplete.
-  
+
 "765" is released under the GNU Library GPL.
 
 %description -l pl
@@ -90,7 +90,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files devel
 %defattr(644,root,root,755)
-%doc doc/765.txt 
+%doc doc/765.txt
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib765.la
 %{_includedir}/*.h
