@@ -10,22 +10,25 @@ URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdsk-devel
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-"765" is an emulation of the uPD765a (AKA Intel 8272) Floppy Disc Controller
-[FDC] as used in Amstrad computers such as the PCW, CPC and Spectrum +3. At
-present it is not a "full" 765; features not used in the PCW BIOS (such as:
-DMA; multisector reads/writes; multitrack mode) are either left unimplemented
-or incomplete.
+"765" is an emulation of the uPD765a (AKA Intel 8272) Floppy Disc
+Controller [FDC] as used in Amstrad computers such as the PCW, CPC and
+Spectrum +3. At present it is not a "full" 765; features not used in
+the PCW BIOS (such as: DMA; multisector reads/writes; multitrack mode)
+are either left unimplemented or incomplete.
   
 "765" is released under the GNU Library GPL.
+
 %description -l pl
-"765" jest emulacj± kontrolera dysków elastycznych uPD765a (AKA Intel 8272)
-u¿ywanego w komputerach Amstrada, takich jak PCW, CPC czy Spectrum +3.
-Na razie nie jest to "pe³ne" 765; w³a¶ciwo¶ci nieu¿ywane w BIOSie PCW
-(takie jak: DMA; odczyt/zapis wielu sektorów; tryb wielo¶cie¿kowy) s± albo
-niezaimplementowane albo ich emulacja jest niepe³na.
+"765" jest emulacj± kontrolera dysków elastycznych uPD765a (znanego
+te¿ jako Intel 8272) u¿ywanego w komputerach Amstrada, takich jak PCW,
+CPC czy Spectrum +3. Na razie nie jest to "pe³ne" 765; w³a¶ciwo¶ci
+nieu¿ywane w BIOSie PCW (takie jak: DMA; odczyt/zapis wielu sektorów;
+tryb wielo¶cie¿kowy) s± albo niezaimplementowane albo ich emulacja
+jest niepe³na.
 
 "765" jest wypuszczone ma licencji LGPL.
 
@@ -74,8 +77,8 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
+%post	-p /sbin/ldconfig
+%postun	-p /sbin/ldconfig
 
 %files
 %defattr(644,root,root,755)
