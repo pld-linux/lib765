@@ -1,12 +1,12 @@
 Summary:	765 FDC
 Summary(pl):	Biblioteka 765
 Name:		lib765
-Version:	0.3.0
+Version:	0.3.1.1
 Release:	1
 License:	LGPL
-Group:		Development/Libraries
+Group:		Libraries
 Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
-# Source0-md5:	073f39c39d0bab3e04ae3325ef3e2423
+# Source0-md5:	1d44827dd9df69c60014c9ede0096182
 URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -54,7 +54,7 @@ Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
 %description static
-The lib765-static package contains the static libraries of lib765.
+This package contains the static lib765 library.
 
 %description static -l pl
 Statyczna wersja biblioteki lib765.
@@ -63,17 +63,19 @@ Statyczna wersja biblioteki lib765.
 %setup -q
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -83,14 +85,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%attr(755,root,root) %{_libdir}/lib765.so.*
+%doc ChangeLog
+%attr(755,root,root) %{_libdir}/lib765.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
 %doc doc/765.txt 
 %attr(755,root,root) %{_libdir}/lib*.so
 %{_libdir}/lib765.la
-%{_includedir}/*
+%{_includedir}/*.h
 
 %files static
 %defattr(644,root,root,755)
