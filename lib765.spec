@@ -1,12 +1,12 @@
-Summary:	765 FDC
-Summary(pl):	Biblioteka 765
+Summary:	765 FDC library
+Summary(pl):	Biblioteka FDC 765
 Name:		lib765
-Version:	0.3.1.1
-Release:	5
+Version:	0.3.3
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
-# Source0-md5:	1d44827dd9df69c60014c9ede0096182
+# Source0-md5:	831929572120af53781322e0456c708b
 URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -27,7 +27,7 @@ are either left unimplemented or incomplete.
 "765" jest emulacj± kontrolera dysków elastycznych uPD765a (znanego
 te¿ jako Intel 8272) u¿ywanego w komputerach Amstrada, takich jak PCW,
 CPC czy Spectrum +3. Na razie nie jest to "pe³ne" 765; w³a¶ciwo¶ci
-nieu¿ywane w BIOSie PCW (takie jak: DMA; odczyt/zapis wielu sektorów;
+nieu¿ywane w BIOS-ie PCW (takie jak: DMA; odczyt/zapis wielu sektorów;
 tryb wielo¶cie¿kowy) s± albo niezaimplementowane albo ich emulacja
 jest niepe³na.
 
