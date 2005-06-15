@@ -1,4 +1,6 @@
+# Conditional build:
 %bcond_without	static_libs	# don't build static library
+#
 Summary:	765 FDC library
 Summary(pl):	Biblioteka FDC 765
 Name:		lib765
