@@ -3,7 +3,7 @@
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	765 FDC library
-Summary(pl):	Biblioteka FDC 765
+Summary(pl.UTF-8):   Biblioteka FDC 765
 Name:		lib765
 Version:	0.3.4
 Release:	1
@@ -27,19 +27,19 @@ are either left unimplemented or incomplete.
 
 "765" is released under the GNU Library GPL.
 
-%description -l pl
-"765" jest emulacj± kontrolera dyskÛw elastycznych uPD765a (znanego
-teø jako Intel 8272) uøywanego w komputerach Amstrada, takich jak PCW,
-CPC czy Spectrum +3. Na razie nie jest to "pe≥ne" 765; w≥a∂ciwo∂ci
-nieuøywane w BIOS-ie PCW (takie jak: DMA; odczyt/zapis wielu sektorÛw;
-tryb wielo∂cieøkowy) s± albo niezaimplementowane albo ich emulacja
-jest niepe≥na.
+%description -l pl.UTF-8
+"765" jest emulacjƒÖ kontrolera dysk√≥w elastycznych uPD765a (znanego
+te≈º jako Intel 8272) u≈ºywanego w komputerach Amstrada, takich jak PCW,
+CPC czy Spectrum +3. Na razie nie jest to "pe≈Çne" 765; w≈Ça≈õciwo≈õci
+nieu≈ºywane w BIOS-ie PCW (takie jak: DMA; odczyt/zapis wielu sektor√≥w;
+tryb wielo≈õcie≈ºkowy) sƒÖ albo niezaimplementowane albo ich emulacja
+jest niepe≈Çna.
 
 "765" jest wypuszczone ma licencji LGPL.
 
 %package devel
 Summary:	765 library - development files
-Summary(pl):	Pliki programistyczne biblioteki 765
+Summary(pl.UTF-8):   Pliki programistyczne biblioteki 765
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libdsk-devel
@@ -48,20 +48,20 @@ Requires:	libdsk-devel
 The lib765-devel package contains the header files and documentation
 needed to develop applications with lib765.
 
-%description devel -l pl
-Pakiet lib765-devel zawiera pliki nag≥Ûwkowe i dokumentacjÍ potrzebne
-do kompilowania aplikacji korzystaj±cych z lib765.
+%description devel -l pl.UTF-8
+Pakiet lib765-devel zawiera pliki nag≈Ç√≥wkowe i dokumentacjƒô potrzebne
+do kompilowania aplikacji korzystajƒÖcych z lib765.
 
 %package static
 Summary:	765 static library
-Summary(pl):	Statyczna biblioteka lib765
+Summary(pl.UTF-8):   Statyczna biblioteka lib765
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 This package contains the static lib765 library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna wersja biblioteki lib765.
 
 %prep
