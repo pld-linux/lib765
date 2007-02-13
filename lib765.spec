@@ -3,7 +3,7 @@
 %bcond_without	static_libs	# don't build static library
 #
 Summary:	765 FDC library
-Summary(pl.UTF-8):   Biblioteka FDC 765
+Summary(pl.UTF-8):	Biblioteka FDC 765
 Name:		lib765
 Version:	0.3.4
 Release:	1
@@ -39,7 +39,7 @@ jest niepełna.
 
 %package devel
 Summary:	765 library - development files
-Summary(pl.UTF-8):   Pliki programistyczne biblioteki 765
+Summary(pl.UTF-8):	Pliki programistyczne biblioteki 765
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	libdsk-devel
@@ -54,7 +54,7 @@ do kompilowania aplikacji korzystających z lib765.
 
 %package static
 Summary:	765 static library
-Summary(pl.UTF-8):   Statyczna biblioteka lib765
+Summary(pl.UTF-8):	Statyczna biblioteka lib765
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
