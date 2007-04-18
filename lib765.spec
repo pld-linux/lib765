@@ -5,12 +5,12 @@
 Summary:	765 FDC library
 Summary(pl.UTF-8):	Biblioteka FDC 765
 Name:		lib765
-Version:	0.3.4
+Version:	0.4.0
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
-# Source0-md5:	fd916b3fe613c39e07540bdbc0effc7f
+# Source0-md5:	be8ae0b969f96de924d6a386c8216ec3
 URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
 BuildRequires:	autoconf
 BuildRequires:	automake
