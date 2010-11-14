@@ -9,9 +9,9 @@ Version:	0.4.2
 Release:	1
 License:	LGPL v2+
 Group:		Libraries
-Source0:	http://www.seasip.demon.co.uk/Unix/LibDsk/%{name}-%{version}.tar.gz
+Source0:	http://www.seasip.info/Unix/LibDsk/%{name}-%{version}.tar.gz
 # Source0-md5:	19000de2a388ea29d11b20023346aa0e
-URL:		http://www.seasip.demon.co.uk/Unix/LibDsk/
+URL:		http://www.seasip.info/Unix/LibDsk/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libdsk-devel
