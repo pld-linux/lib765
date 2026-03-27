@@ -6,7 +6,7 @@ Summary:	765 FDC library
 Summary(pl.UTF-8):	Biblioteka FDC 765
 Name:		lib765
 Version:	0.4.2
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://www.seasip.info/Unix/LibDsk/%{name}-%{version}.tar.gz
